@@ -1,4 +1,4 @@
-# Quasar - Removed Tray Icon
+# Quasar - Removed Client Notifications + Tray Icon
 
 [![Downloads](https://img.shields.io/github/downloads/quasar/Quasar/total.svg)](https://github.com/PatrykXDD/Quasar/releases)
 [![License](https://img.shields.io/github/license/quasar/Quasar.svg)](LICENSE)
