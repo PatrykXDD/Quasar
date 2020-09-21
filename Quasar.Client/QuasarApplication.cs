@@ -1,4 +1,4 @@
-﻿using Quasar.Client.Config;
+using Quasar.Client.Config;
 using Quasar.Client.Logging;
 using Quasar.Client.Messages;
 using Quasar.Client.Networking;
@@ -80,24 +80,6 @@ namespace Quasar.Client
         }
 
         /// <summary>
-        /// Initializes the notification icon.
-        /// </summary>
-        private void InitializeNotifyicon()
-        {
-            _notifyIcon.Text = "Quasar Client\nNo connection";
-            _notifyIcon.Visible = true;
-            try
-            {
-                _notifyIcon.Icon = Icon.ExtractAssociatedIcon(Assembly.GetExecutingAssembly().Location);
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-                _notifyIcon.Icon = SystemIcons.Application;
-            }
-        }
-
-        /// <summary>
         /// Begins running the application.
         /// </summary>
         public void Run()
@@ -142,9 +124,6 @@ namespace Quasar.Client
                 {
                     Debug.WriteLine(e);
                 }
-
-                if (!Settings.UNATTENDEDMODE)
-                    InitializeNotifyicon();
 
                 if (Settings.ENABLELOGGER)
                 {
